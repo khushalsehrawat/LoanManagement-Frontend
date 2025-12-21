@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAMF LMS • Industry-Grade Loan Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <span style="background:var(--g1); -webkit-background-clip:text; background-clip:text; color:transparent;">
+          <img src="logo.png" width="50%" alt="">
+        </span>
+      </a>
+      <div class="ms-auto d-flex gap-2">
+        <a href="login.html" class="btn btn-outline-lux">Admin Login</a>
+        <a href="dashboard.html" class="btn btn-lux">Open Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="lux-hero">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="lux-badge mb-3">
+            <span class="badge rounded-pill" style="background:var(--g2);">LAMF</span>
+            <span class="text-muted-lux">Loan Against Mutual Funds • Products • Applications • Collateral • Ongoing Loans • Partner APIs</span>
+          </div>
+          <h1 class="lux-title display-5">
+            An industry-aligned <span style="background:var(--g1); -webkit-background-clip:text; background-clip:text; color:transparent;">Loan Management System</span>
+            for NBFC-style LAMF workflows.
+          </h1>
+          <p class="mt-3 fs-5 text-muted-lux">
+            Built as a Java Full-Stack project (Spring Boot + PostgreSQL + Bootstrap JS dashboard),
+            designed to demonstrate real lending lifecycle, collateral valuation, and partner integrations.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <span class="lux-badge">✅ Product Setup</span>
+            <span class="lux-badge">✅ Application Lifecycle</span>
+            <span class="lux-badge">✅ MF Units Collateral</span>
+            <span class="lux-badge">✅ Repayments</span>
+            <span class="lux-badge">✅ Fintech Partner API</span>
+          </div>
+
+          <div class="d-flex gap-2 mt-4">
+            <a class="btn btn-lux" href="dashboard.html">Explore Dashboard</a>
+            <a class="btn btn-outline-lux" href="#api">Partner API</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="lux-card p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <div class="text-muted-lux">System Outcomes</div>
+                <h3 class="lux-title mt-1">What this solves</h3>
+              </div>
+              <div class="icon-pill">⚡</div>
+            </div>
+            <div class="lux-gradient-line my-3"></div>
+
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="lux-kpi">
+                  <div class="text-muted-lux small">Outcome #1</div>
+                  <div class="fw-bold">Fast lending operations (structured workflow)</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="lux-kpi">
+                  <div class="text-muted-lux small">Outcome #2</div>
+                  <div class="fw-bold">Risk-aware limits (LTV-based eligibility)</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="lux-kpi">
+                  <div class="text-muted-lux small">Outcome #3</div>
+                  <div class="fw-bold">API-first integration for fintech partners</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="lux-kpi">
+                  <div class="text-muted-lux small">Outcome #4</div>
+                  <div class="fw-bold">Clean admin dashboard for complete visibility</div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+            <div class="text-muted-lux small">
+              Tip: Login using <code class="kbd">admin</code> / <code class="kbd">admin123</code> (demo).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: What the system does -->
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="lux-card p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="lux-title mb-0">What I built</h3>
+              <div class="icon-pill">🧩</div>
+            </div>
+            <div class="lux-gradient-line my-3"></div>
+            <p class="text-muted-lux mb-0">
+              A complete LAMF LMS that supports the full journey:
+              <b>Product configuration → Loan Application creation → Collateral (MF units) capture → Eligibility computation (LTV) → Approval/Disbursal → Active loan tracking → Repayments</b>.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="lux-card p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="lux-title mb-0">Why it matters</h3>
+              <div class="icon-pill">🎯</div>
+            </div>
+            <div class="lux-gradient-line my-3"></div>
+            <p class="text-muted-lux mb-0">
+              LAMF products require disciplined collateral tracking. This system models mutual fund holdings as collateral and derives eligible limits using max LTV — mirroring real NBFC lending operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Modules -->
+  <section class="section">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h2 class="lux-title mb-0">Modules</h2>
+        <span class="lux-badge">Admin Dashboard</span>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="lux-card-soft p-4 h-100">
+            <div class="icon-pill mb-3">📦</div>
+            <h5 class="fw-bold">Loan Products</h5>
+            <p class="text-muted-lux mb-0">Create products with interest rate and max LTV rules.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="lux-card-soft p-4 h-100">
+            <div class="icon-pill mb-3">📝</div>
+            <h5 class="fw-bold">Loan Applications</h5>
+            <p class="text-muted-lux mb-0">Track drafts/submitted/active applications with eligibility.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="lux-card-soft p-4 h-100">
+            <div class="icon-pill mb-3">💎</div>
+            <h5 class="fw-bold">Collateral Management</h5>
+            <p class="text-muted-lux mb-0">Record MF scheme, units and NAV. Track pledge status.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="lux-card-soft p-4 h-100">
+            <div class="icon-pill mb-3">🏦</div>
+            <h5 class="fw-bold">Ongoing Loans</h5>
+            <p class="text-muted-lux mb-0">Active exposure view, outstanding balance, loan status.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="lux-card-soft p-4 h-100">
+            <div class="icon-pill mb-3">🔌</div>
+            <h5 class="fw-bold">Partner APIs</h5>
+            <p class="text-muted-lux mb-0">API-key based integration for fintech application creation.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="lux-card-soft p-4 h-100">
+            <div class="icon-pill mb-3">🧠</div>
+            <h5 class="fw-bold">Eligibility Engine</h5>
+            <p class="text-muted-lux mb-0">Collateral value × LTV → eligible limit for sanctioning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Workflow -->
+  <section class="section">
+    <div class="container">
+      <div class="lux-card p-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <h2 class="lux-title mb-0">Workflow</h2>
+          <div class="icon-pill">🔁</div>
+        </div>
+        <div class="lux-gradient-line my-3"></div>
+        <div class="row g-3">
+          <div class="col-md-3"><div class="lux-kpi"><b>1)</b> Create Product</div></div>
+          <div class="col-md-3"><div class="lux-kpi"><b>2)</b> Create Application</div></div>
+          <div class="col-md-3"><div class="lux-kpi"><b>3)</b> Add Collateral & Compute Limit</div></div>
+          <div class="col-md-3"><div class="lux-kpi"><b>4)</b> Submit → Approve/Disburse → Active Loan</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Architecture -->
+  <section class="section" id="api">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="lux-card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="lux-title mb-0">API Design</h3>
+              <div class="icon-pill">🛡️</div>
+            </div>
+            <div class="lux-gradient-line my-3"></div>
+            <p class="text-muted-lux mb-2">
+              Internal operations are secured with JWT, while partner integrations use API Key authentication.
+            </p>
+            <ul class="text-muted-lux mb-0">
+              <li><b>/api/**</b> (JWT) — products, applications, loans, repayments</li>
+              <li><b>/partner/v1/**</b> (API Key) — fintech creates loan applications</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="lux-card p-4 h-100">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="lux-title mb-0">Partner Example</h3>
+              <div class="icon-pill">🔑</div>
+            </div>
+            <div class="lux-gradient-line my-3"></div>
+            <p class="text-muted-lux mb-2">Create loan application via partner API:</p>
+            <pre class="lux-card-soft p-3 mb-0" style="white-space:pre-wrap;">
+POST /partner/v1/loan-applications
+Header: X-API-KEY: DEMO_PARTNER_KEY_123
+
+{
+  "fullName": "Fintech User",
+  "email": "user@fintech.com",
+  "phone": "9000000000",
+  "pan": "FINTE1234Z",
+  "loanProductId": 1,
+  "requestedAmount": 90000
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="lux-card p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8">
+            <h2 class="lux-title mb-2">Ready to review the system?</h2>
+            <p class="text-muted-lux mb-0">
+              Open the dashboard and follow the lifecycle: create product → create application → add collateral → submit → approve/disburse → repayment.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="btn btn-lux w-100 w-lg-auto" href="dashboard.html">Open Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container pb-5">
+    <div class="text-center text-muted-lux small">© LAMF LMS • Java Full Stack • Spring Boot + PostgreSQL + Bootstrap Dashboard</div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
