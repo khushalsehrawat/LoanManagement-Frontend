@@ -1,4 +1,5 @@
 // Change this when deployed
 window.APP_CONFIG = {
-  BASE_URL: "http://localhost:8080"
+  BASE_URL: "https://loanmanagement-phbg.onrender.com/"
 };
+
