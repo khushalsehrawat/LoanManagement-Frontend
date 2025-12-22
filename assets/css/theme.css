@@ -204,3 +204,168 @@ hr{border-color: var(--stroke)}
 
 /* Toast */
 .toast-container{z-index: 9999;}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE PATCH (append)
+   ========================= */
+
+/* Safer media + images */
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll from long content */
+body {
+  overflow-x: hidden;
+}
+
+/* Navbar brand logo control (works for both pages) */
+.navbar .navbar-brand img {
+  width: clamp(120px, 18vw, 190px);
+  height: auto;
+  display: block;
+}
+
+/* Buttons: better tap targets on mobile */
+.btn {
+  min-height: 44px;
+}
+
+/* Hero spacing: less on phones */
+.lux-hero {
+  padding-top: 92px;
+  padding-bottom: 52px;
+}
+@media (max-width: 576px) {
+  .lux-hero {
+    padding-top: 78px;
+    padding-bottom: 36px;
+  }
+  .lux-title {
+    line-height: 1.08;
+  }
+  .section {
+    padding: 38px 0;
+  }
+  .lux-card, .lux-card-soft {
+    border-radius: 16px;
+  }
+}
+
+/* Navbar on small screens: stack actions nicely */
+@media (max-width: 576px) {
+  .navbar .container,
+  .navbar .container-fluid {
+    gap: 10px;
+  }
+
+  /* tighten padding */
+  .navbar .btn {
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-weight: 800;
+  }
+}
+
+/* Make long code blocks responsive */
+pre {
+  overflow: auto;
+  max-width: 100%;
+  border-radius: 16px;
+}
+pre::-webkit-scrollbar {
+  height: 10px;
+}
+pre::-webkit-scrollbar-thumb {
+  background: rgba(17,24,39,0.18);
+  border-radius: 999px;
+}
+
+/* Tables on mobile: allow horizontal scrolling cleanly */
+.table-responsive {
+  border-radius: 16px;
+}
+
+/* Dashboard layout improvements */
+#pageContainer {
+  min-height: calc(100vh - 110px);
+}
+
+/* Sidebar: desktop sticky stays */
+.sidebar {
+  min-height: calc(100vh - 85px);
+  position: sticky;
+  top: 75px;
+}
+
+/* Sidebar -> Mobile: convert to top "chip" nav (horizontal scroll) */
+@media (max-width: 992px) {
+  .sidebar {
+    position: relative;
+    top: 0;
+    min-height: auto;
+    padding: 14px;
+  }
+
+  #sideNav {
+    flex-direction: row !important;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: thin;
+  }
+
+  #sideNav .nav-link {
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+
+  /* Hide "Modules" label to save space */
+  .sidebar .text-muted-lux.small.mb-2 {
+    display: none;
+  }
+
+  /* Partner API card becomes compact */
+  .sidebar hr {
+    margin: 12px 0 !important;
+  }
+  .sidebar .lux-card-soft {
+    padding: 12px !important;
+  }
+}
+
+/* Modal sizing on phones */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 12px;
+  }
+  .modal-content {
+    border-radius: 16px;
+  }
+}
+
+/* Better spacing for KPI blocks on small devices */
+@media (max-width: 576px) {
+  .lux-kpi {
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+}
+
+/* Reduce heavy shadows on low-end phones (smoother scroll) */
+@media (max-width: 576px) {
+  .lux-card {
+    box-shadow: 0 12px 28px rgba(17, 24, 39, 0.10);
+  }
+}
