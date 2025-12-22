@@ -369,3 +369,43 @@ pre::-webkit-scrollbar-thumb {
     box-shadow: 0 12px 28px rgba(17, 24, 39, 0.10);
   }
 }
+
+/* ===== Index navbar alignment fix ===== */
+
+.brand-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .brand-logo {
+    height: 32px;
+  }
+}
+
+/* Perfect vertical alignment */
+.navbar .container {
+  align-items: center;
+}
+
+/* Buttons alignment & spacing */
+.navbar .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  line-height: 1;
+}
+
+/* Keep logo + buttons visually balanced */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Prevent buttons from shrinking oddly */
+.navbar .ms-auto {
+  flex-shrink: 0;
+}
+
