@@ -1,0 +1,14 @@
+{
+  "sites": [
+    {
+      "name": "LoanManagement-Frontend",
+      "root": ".",
+      "base_url": "https://loan-management-frontend-weld.vercel.app/",
+      "pages": {
+        "dashboard.html": "https://loan-management-frontend-weld.vercel.app/dashboard.html",
+        "index.html": "https://loan-management-frontend-weld.vercel.app/",
+        "login.html": "https://loan-management-frontend-weld.vercel.app/login.html"
+      }
+    }
+  ]
+}
