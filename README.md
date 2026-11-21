@@ -12,7 +12,7 @@ The existing API connection is configured in `assets/js/config.js`. Login and da
 
 All three HTML pages include page-specific descriptions, TheBenzzCreations author/creator metadata, Open Graph metadata and Twitter card metadata. Existing titles, branding and application code are preserved.
 
-The homepage includes one WebSite JSON-LD block identifying the developer and one visible credit below the existing copyright. The promotional developer link uses `rel="noopener noreferrer nofollow"`.
+The homepage includes one WebSite JSON-LD block identifying the developer and one visible credit below the existing copyright. The promotional developer link uses `rel="nofollow"`.
 
 The public frontend URL has not been verified. Canonical links, `og:url` and the WebSite `url` are omitted until that URL is confirmed. The backend API URL in `assets/js/config.js` and the developer website must not be used as the frontend's canonical URL. No dedicated social preview image is configured. Structured data does not guarantee search rich results.
 
